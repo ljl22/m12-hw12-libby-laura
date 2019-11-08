@@ -19,3 +19,4 @@ class IceCream extends Desserts {
 
 //give above properities a value by creating a variable (not creating another class)
 const vanillaIceCream = new VanillaIceCream('ice cream', '340', 'vanilla', '3');
+console.log(vanillaIceCream);
