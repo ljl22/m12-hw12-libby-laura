@@ -12,12 +12,17 @@ class IceCream extends Desserts {
     super(type, calories);
     this.flavor = flavor;
     this.scoops = scoops;
-    //this.includeSpoon(console.log('Here is your spoon!')) = include;
-    this.includeSpoon = function () {
-      console.log('Here is your spoon!');
+    //this.includeSpoon(console.log('Here is your spoon!')) = includeSpoon;
+  }
+
+  includeSpoon() {
+    console.log('Here is your spoon!');
   }
 }
 
 //give above properities a value by creating a variable (not creating another class)
 const vanillaIceCream = new IceCream('ice cream', '340', 'vanilla', '3');
 console.log(vanillaIceCream);
+
+//call includeSpoon on vanilla ic cream
+vanillaIceCream.includeSpoon();
